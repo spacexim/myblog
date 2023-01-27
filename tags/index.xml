@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on 艺汪清泉的博客</title>
-        <link>https://example.com/tags/</link>
+        <link>https://ryanzuu.github.io/myblog/tags/</link>
         <description>Recent content in Tags on 艺汪清泉的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Wed, 25 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 25 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanzuu.github.io/myblog/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>CSS</title>
-        <link>https://example.com/tags/css/</link>
+        <link>https://ryanzuu.github.io/myblog/tags/css/</link>
         <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/tags/css/</guid>
+        <guid>https://ryanzuu.github.io/myblog/tags/css/</guid>
         <description></description>
         </item>
         <item>
         <title>前端</title>
-        <link>https://example.com/tags/%E5%89%8D%E7%AB%AF/</link>
+        <link>https://ryanzuu.github.io/myblog/tags/%E5%89%8D%E7%AB%AF/</link>
         <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/tags/%E5%89%8D%E7%AB%AF/</guid>
+        <guid>https://ryanzuu.github.io/myblog/tags/%E5%89%8D%E7%AB%AF/</guid>
         <description></description>
         </item>
         

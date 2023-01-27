@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on 艺汪清泉的博客</title>
-        <link>https://example.com/page/</link>
+        <link>https://ryanzuu.github.io/myblog/page/</link>
         <description>Recent content in Pages on 艺汪清泉的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanzuu.github.io/myblog/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>归档</title>
-        <link>https://example.com/archives/</link>
+        <link>https://ryanzuu.github.io/myblog/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/archives/</guid>
+        <guid>https://ryanzuu.github.io/myblog/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>关于</title>
-        <link>https://example.com/%E5%85%B3%E4%BA%8E/</link>
+        <link>https://ryanzuu.github.io/myblog/%E5%85%B3%E4%BA%8E/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/%E5%85%B3%E4%BA%8E/</guid>
+        <guid>https://ryanzuu.github.io/myblog/%E5%85%B3%E4%BA%8E/</guid>
         <description>&lt;!-- raw HTML omitted --&gt;
 &lt;h3 id=&#34;div-aligncenterim-ryan-zu-a-student-at-hunan-university--majoring-in-communication-engineering-div&#34;&gt;&lt;!-- raw HTML omitted --&gt;I&amp;rsquo;m Ryan Zu, a student at Hunan University 👨‍💻 majoring in communication engineering 🚀&lt;!-- raw HTML omitted --&gt;&lt;/h3&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -145,10 +145,10 @@
         </item>
         <item>
         <title>链接</title>
-        <link>https://example.com/%E9%93%BE%E6%8E%A5/</link>
+        <link>https://ryanzuu.github.io/myblog/%E9%93%BE%E6%8E%A5/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/%E9%93%BE%E6%8E%A5/</guid>
+        <guid>https://ryanzuu.github.io/myblog/%E9%93%BE%E6%8E%A5/</guid>
         <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
 &lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -180,10 +180,10 @@
         </item>
         <item>
         <title>搜索</title>
-        <link>https://example.com/search/</link>
+        <link>https://ryanzuu.github.io/myblog/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/search/</guid>
+        <guid>https://ryanzuu.github.io/myblog/search/</guid>
         <description></description>
         </item>
         
