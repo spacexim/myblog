@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Test on 艺汪清泉的博客</title>
-        <link>https://RyanZuu.github.io/myblog/categories/test/</link>
+        <link>https://ryanzuu.github.io/myblog/categories/test/</link>
         <description>Recent content in Test on 艺汪清泉的博客</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language><atom:link href="https://RyanZuu.github.io/myblog/categories/test/index.xml" rel="self" type="application/rss+xml" />
+        <language>zh-cn</language><atom:link href="https://ryanzuu.github.io/myblog/categories/test/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
