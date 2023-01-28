@@ -2,33 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on 艺汪清泉的博客</title>
-        <link>https://ryanzuu.github.io/myblog/categories/</link>
+        <link>https://RyanZuu.github.io/myblog/categories/</link>
         <description>Recent content in Categories on 艺汪清泉的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Wed, 25 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanzuu.github.io/myblog/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Test</title>
-        <link>https://ryanzuu.github.io/myblog/categories/test/</link>
-        <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
-        
-        <guid>https://ryanzuu.github.io/myblog/categories/test/</guid>
-        <description>&lt;img src="https://ryanzuu.github.io/myblog/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
-        </item>
-        <item>
-        <title>测试</title>
-        <link>https://ryanzuu.github.io/myblog/categories/%E6%B5%8B%E8%AF%95/</link>
-        <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
-        
-        <guid>https://ryanzuu.github.io/myblog/categories/%E6%B5%8B%E8%AF%95/</guid>
-        <description></description>
-        </item>
-        <item>
+        <lastBuildDate>Wed, 25 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://RyanZuu.github.io/myblog/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>技术笔记</title>
-        <link>https://ryanzuu.github.io/myblog/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/</link>
+        <link>https://RyanZuu.github.io/myblog/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Wed, 25 Jan 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://ryanzuu.github.io/myblog/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;img src="https://ryanzuu.github.io/myblog/dog-tech.jpg" alt="Featured image of post 技术笔记" /&gt;</description>
+        <guid>https://RyanZuu.github.io/myblog/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="https://RyanZuu.github.io/myblog/dog-tech.jpg" alt="Featured image of post 技术笔记" /&gt;</description>
+        </item>
+        <item>
+        <title>Test</title>
+        <link>https://RyanZuu.github.io/myblog/categories/test/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://RyanZuu.github.io/myblog/categories/test/</guid>
+        <description>&lt;img src="https://RyanZuu.github.io/myblog/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
         </item>
         
     </channel>
