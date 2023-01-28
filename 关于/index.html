@@ -11,12 +11,12 @@
 <meta property='og:description' content=' I&amp;rsquo;m Ryan Zu, a student at Hunan University 👨‍💻 majoring in communication engineering 🚀 ✍️Blog &amp;amp; Writing Apart from coding, I also maintain a blog - you can find my articles on my website at
 🔧Technologies &amp;amp; Tools 📈 GitHub Stats '>
 <meta property='og:url' content='https://ryanzuu.github.io/myblog/%E5%85%B3%E4%BA%8E/'>
-<meta property='og:site_name' content='艺汪清泉的博客'>
+<meta property='og:site_name' content='artdoge的博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page' />
 <meta name="twitter:title" content="关于">
 <meta name="twitter:description" content=" I&amp;rsquo;m Ryan Zu, a student at Hunan University 👨‍💻 majoring in communication engineering 🚀 ✍️Blog &amp;amp; Writing Apart from coding, I also maintain a blog - you can find my articles on my website at
 🔧Technologies &amp;amp; Tools 📈 GitHub Stats ">
-    <link rel="shortcut icon" href="/DOGE%20%e5%8c%ba%e5%9d%97%e9%93%be.png" />
+    <link rel="shortcut icon" href="/dogecoin.png" />
 
     </head>
     <body class="
@@ -72,7 +72,7 @@
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="/myblog">艺汪清泉的博客</a></h1>
+            <h1 class="site-name"><a href="/myblog">artdoge的博客</a></h1>
             <h2 class="site-description">道阻且长，行则将至</h2>
         </div>
     </header><ol class="social-menu">
@@ -522,46 +522,23 @@
      
     
         
-    <div class="disqus-container">
-    <div id="disqus_thread"></div>
-<script type="application/javascript">
-    window.disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
-
+    <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet'/>
+<div id="waline" class="waline-container"></div>
 <style>
-    .disqus-container {
+    .waline-container {
         background-color: var(--card-background);
         border-radius: var(--card-border-radius);
         box-shadow: var(--shadow-l1);
         padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
     }
-</style>
-
-<script>
-    window.addEventListener('onColorSchemeChange', (e) => {
-        if (typeof DISQUS == 'object') {
-            DISQUS.reset({
-                reload: true
-            });
-        }
-    })
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    Waline.init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo"],"locale":{"admin":"Admin","placeholder":null},"pageview":true,"reaction":true,"requiredMeta":["name","email","url"],"serverURL":"https://ryanzuu.github.io/myblog"});
 </script>
 
     
@@ -572,12 +549,12 @@
         
             2022 - 
         
-        2023 艺汪清泉的博客
+        2023 artdoge的博客
     </section>
     
     <section class="powerby">
         
-            道阻且长，行则将至.... <br/>
+            道阻且长，行则将至 <br/>
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
         主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
