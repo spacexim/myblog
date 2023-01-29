@@ -2,16 +2,16 @@
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='代码随想录刷题路线'>
-<title>【LeetCode刷题笔记01】704.二分查找 27.移除元素</title>
+<title>【Leetcode刷题笔记02】977.有序数组的平方 209.长度最小的子数组 59.螺旋矩阵II</title>
 
-<link rel='canonical' href='https://ryanzuu.github.io/myblog/p/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B001704.%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE-27.%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/'>
+<link rel='canonical' href='https://ryanzuu.github.io/myblog/p/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B002977.%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9-209.%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84-59.%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5ii/'>
 
-<link rel="stylesheet" href="/myblog/scss/style.min.4d9d219bcdb41993551c1b6b5b459d81fc222e4e3b2fa531548b26fdb2ca5bc2.css"><meta property='og:title' content='【LeetCode刷题笔记01】704.二分查找 27.移除元素'>
+<link rel="stylesheet" href="/myblog/scss/style.min.4d9d219bcdb41993551c1b6b5b459d81fc222e4e3b2fa531548b26fdb2ca5bc2.css"><meta property='og:title' content='【Leetcode刷题笔记02】977.有序数组的平方 209.长度最小的子数组 59.螺旋矩阵II'>
 <meta property='og:description' content='代码随想录刷题路线'>
-<meta property='og:url' content='https://ryanzuu.github.io/myblog/p/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B001704.%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE-27.%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/'>
+<meta property='og:url' content='https://ryanzuu.github.io/myblog/p/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B002977.%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9-209.%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84-59.%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5ii/'>
 <meta property='og:site_name' content='artdoge的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Leetcode' /><meta property='article:tag' content='算法' /><meta property='article:published_time' content='2023-01-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-01-29T00:00:00&#43;00:00'/><meta property='og:image' content='https://ryanzuu.github.io/myblog/lc.webp' />
-<meta name="twitter:title" content="【LeetCode刷题笔记01】704.二分查找 27.移除元素">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='leetcode' /><meta property='article:tag' content='算法' /><meta property='article:published_time' content='2023-01-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-01-29T00:00:00&#43;00:00'/><meta property='og:image' content='https://ryanzuu.github.io/myblog/lc.webp' />
+<meta name="twitter:title" content="【Leetcode刷题笔记02】977.有序数组的平方 209.长度最小的子数组 59.螺旋矩阵II">
 <meta name="twitter:description" content="代码随想录刷题路线"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://ryanzuu.github.io/myblog/lc.webp' />
     <link rel="shortcut icon" href="/dogecoin.png" />
@@ -301,18 +301,25 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#704-二分查找">704. 二分查找</a>
+    <li><a href="#977-有序数组的平方">977. 有序数组的平方</a>
       <ol>
         <li><a href="#题目描述">题目描述</a></li>
         <li><a href="#做题思路">做题思路</a></li>
         <li><a href="#参考代码">参考代码</a></li>
       </ol>
     </li>
-    <li><a href="#27-移除元素">27. 移除元素</a>
+    <li><a href="#209-长度最小的子数组">209. 长度最小的子数组</a>
       <ol>
         <li><a href="#题目描述-1">题目描述</a></li>
         <li><a href="#做题思路-1">做题思路</a></li>
         <li><a href="#参考代码-1">参考代码</a></li>
+      </ol>
+    </li>
+    <li><a href="#59-螺旋矩阵-ii">59. 螺旋矩阵 II</a>
+      <ol>
+        <li><a href="#题目描述-2">题目描述</a></li>
+        <li><a href="#做题思路-2">做题思路</a></li>
+        <li><a href="#参考代码-2">参考代码</a></li>
       </ol>
     </li>
   </ol>
@@ -329,9 +336,9 @@
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/myblog/p/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B001704.%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE-27.%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/">
+            <a href="/myblog/p/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B002977.%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9-209.%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84-59.%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5ii/">
                 
-                    <img src="/myblog/lc.webp" loading="lazy" alt="Featured image of post 【LeetCode刷题笔记01】704.二分查找 27.移除元素" />
+                    <img src="/myblog/lc.webp" loading="lazy" alt="Featured image of post 【Leetcode刷题笔记02】977.有序数组的平方 209.长度最小的子数组 59.螺旋矩阵II" />
                 
             </a>
         </div>
@@ -350,7 +357,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/myblog/p/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B001704.%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE-27.%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/">【LeetCode刷题笔记01】704.二分查找 27.移除元素</a>
+            <a href="/myblog/p/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B002977.%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9-209.%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84-59.%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5ii/">【Leetcode刷题笔记02】977.有序数组的平方 209.长度最小的子数组 59.螺旋矩阵II</a>
         </h2>
     
         
@@ -391,7 +398,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -406,11 +413,11 @@
     <section class="article-content">
     
     
-    <h2 id="704-二分查找">704. 二分查找</h2>
+    <h2 id="977-有序数组的平方">977. 有序数组的平方</h2>
 <h3 id="题目描述">题目描述</h3>
-<p>给定一个 <code>n</code> 个元素有序的（升序）整型数组 <code>nums</code> 和一个目标值 <code>target</code> ，写一个函数搜索 <code>nums</code> 中的 <code>target</code>，如果目标值存在返回下标，否则返回 <code>-1</code></p>
+<p>给你一个按 <strong>非递减顺序</strong> 排序的整数数组 <code>nums</code>，返回 <strong>每个数字的平方</strong> 组成的新数组，要求也按 <strong>非递减顺序</strong> 排序。</p>
 <h3 id="做题思路">做题思路</h3>
-<p>由于数组是有序的，所以可以使用二分法。首先取数组中点位置，比较后确定目标值所在区间是左区间还是右区间，随后再取子区间的中点，不断二分，直到定位目标值</p>
+<p>由于原数组存在负数，所以平方后最大值可能出现在两端。因此可以采用<strong>双指针</strong>法，在数组首尾各放置一个指针，比较指针元素平方后的值。较大者放入结果数组末端，同时该指针向中间移动，继续比较。</p>
 <h3 id="参考代码">参考代码</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -427,31 +434,42 @@
 </span><span class="lnt">11
 </span><span class="lnt">12
 </span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">	<span class="kd">public</span> <span class="kt">int</span> <span class="nf">search</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">nums</span><span class="o">,</span> <span class="kt">int</span> <span class="n">target</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">		<span class="kt">int</span> <span class="n">left</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span><span class="c1">//初始左端
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="kt">int</span> <span class="n">right</span><span class="o">=</span><span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="mi">1</span><span class="o">;</span><span class="c1">//初始右端
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>		<span class="k">while</span><span class="o">(</span><span class="n">left</span><span class="o">&lt;=</span><span class="n">right</span><span class="o">){</span><span class="c1">//不断二分
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>			<span class="kt">int</span> <span class="n">middle</span><span class="o">=(</span><span class="n">left</span><span class="o">+</span><span class="n">right</span><span class="o">)/</span><span class="mi">2</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">			<span class="k">if</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">middle</span><span class="o">]&gt;</span><span class="n">target</span><span class="o">)</span><span class="n">right</span><span class="o">=</span><span class="n">middle</span><span class="o">-</span><span class="mi">1</span><span class="o">;</span><span class="c1">//左区间
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>			<span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">middle</span><span class="o">]&lt;</span><span class="n">target</span><span class="o">)</span><span class="n">left</span><span class="o">=</span><span class="n">middle</span><span class="o">+</span><span class="mi">1</span><span class="o">;</span><span class="c1">//右区间
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>			<span class="k">else</span> <span class="o">{</span><span class="k">return</span> <span class="n">middle</span><span class="o">;}</span>
-</span></span><span class="line"><span class="cl">    	<span class="o">}</span>
-</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">	<span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span><span class="o">[]</span> <span class="nf">sortedSquares</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">nums</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">left</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span><span class="c1">//左指针
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span> <span class="n">right</span><span class="o">=</span><span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="mi">1</span><span class="o">;</span><span class="c1">//右指针
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span><span class="o">[]</span> <span class="n">result</span><span class="o">=</span><span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">];</span><span class="c1">//结果数组
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span> <span class="n">index</span><span class="o">=</span><span class="n">result</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="mi">1</span><span class="o">;</span><span class="c1">//结果数组的指针要放在末端
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">while</span><span class="o">(</span><span class="n">left</span><span class="o">&lt;=</span><span class="n">right</span><span class="o">){</span><span class="c1">//注意等号
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">if</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">left</span><span class="o">]*</span><span class="n">nums</span><span class="o">[</span><span class="n">left</span><span class="o">]&gt;</span><span class="n">nums</span><span class="o">[</span><span class="n">right</span><span class="o">]*</span><span class="n">nums</span><span class="o">[</span><span class="n">right</span><span class="o">]){</span><span class="c1">//左指针元素平方比右指针大
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">result</span><span class="o">[</span><span class="n">index</span><span class="o">--]=</span><span class="n">nums</span><span class="o">[</span><span class="n">left</span><span class="o">]*</span><span class="n">nums</span><span class="o">[</span><span class="n">left</span><span class="o">];</span><span class="c1">//左指针元素平方放入结果数组
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="o">++</span><span class="n">left</span><span class="o">;</span><span class="c1">//左指针移动
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">result</span><span class="o">[</span><span class="n">index</span><span class="o">--]=</span><span class="n">nums</span><span class="o">[</span><span class="n">right</span><span class="o">]*</span><span class="n">nums</span><span class="o">[</span><span class="n">right</span><span class="o">];</span><span class="c1">//右指针元素平方放入结果数组
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="o">--</span><span class="n">right</span><span class="o">;</span><span class="c1">//右指针移动
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="27-移除元素">27. 移除元素</h2>
+</div><h2 id="209-长度最小的子数组">209. 长度最小的子数组</h2>
 <h3 id="题目描述-1">题目描述</h3>
-<p>给你一个数组 <code>nums</code> 和一个值 <code>val</code>，你需要原地移除所有数值等于 <code>val</code> 的元素，并返回移除后数组的新长度。</p>
-<p>不要使用额外的数组空间，你必须仅使用 <code>O(1)</code> 额外空间并<strong>原地修改输入数组</strong>。</p>
-<p>元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素。</p>
+<p>给定一个含有 <code>n</code> 个正整数的数组和一个正整数 <code>target</code> <strong>。</strong></p>
+<p>找出该数组中满足其和 <code>≥ target</code> 的长度最小的 <strong>连续子数组</strong> <code>[numsl, numsl+1, ..., numsr-1, numsr]</code> ，并返回其长度**。**如果不存在符合条件的子数组，返回 <code>0</code> 。</p>
 <h3 id="做题思路-1">做题思路</h3>
-<p>由于<strong>不需要考虑数组中超出新长度后面的元素</strong>，所以可以考虑使用双指针法。首先快慢指针初始化 0，快指针前进，若指向元素不是 val，那么就修改慢指针指向元素为快指针元素，同时慢指针前进；若指向元素是 val，则跳过，继续前进，慢指针不动。</p>
-<p>如此做，就可以跳过所有 val 元素，将所有非 val 元素挪到前面。最后运行结束，此时慢指针的位置就是所有非 val 元素的数量。</p>
+<p>由于本题的目标是连续子数组，所以可以想到使用<strong>滑动窗口法</strong>，也就是双指针法。</p>
+<p>将右指针设定为子数组的右端，左指针为左端。首先左指针不动，右指针右移，滑动窗口不断增长，和不断增加，当和 <code>≥ target</code> 时，此时的长度满足条件，但题目要求长度最小，因此需要与之前成立的长度进行比较，更新最小长度。同时左指针右移，更新滑动窗口。</p>
 <h3 id="参考代码-1">参考代码</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -467,19 +485,95 @@
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">removeElement</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">nums</span><span class="o">,</span> <span class="kt">int</span> <span class="n">val</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">slowindex</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span><span class="c1">//慢指针
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">fastindex</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span><span class="n">fastindex</span><span class="o">&lt;</span><span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">;</span><span class="n">fastindex</span><span class="o">++){</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">fastindex</span><span class="o">]!=</span><span class="n">val</span><span class="o">){</span>
-</span></span><span class="line"><span class="cl">                <span class="n">nums</span><span class="o">[</span><span class="n">slowindex</span><span class="o">]=</span><span class="n">nums</span><span class="o">[</span><span class="n">fastindex</span><span class="o">];</span><span class="c1">//慢指针元素替换
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">slowindex</span><span class="o">++;</span><span class="c1">//慢指针移动
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">minSubArrayLen</span><span class="o">(</span><span class="kt">int</span> <span class="n">target</span><span class="o">,</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">nums</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">left</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span><span class="c1">//左指针
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span> <span class="n">result</span><span class="o">=</span><span class="n">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">sum</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> 
+</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">right</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span><span class="n">right</span><span class="o">&lt;</span><span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">;</span><span class="n">right</span><span class="o">++){</span><span class="c1">//左指针不动，右指针右移，构建窗口
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">sum</span><span class="o">+=</span><span class="n">nums</span><span class="o">[</span><span class="n">right</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">            <span class="k">while</span><span class="o">(</span><span class="n">sum</span><span class="o">&gt;=</span><span class="n">target</span><span class="o">){</span><span class="c1">//此时窗口内的和已经满足条件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">result</span><span class="o">=</span><span class="n">Math</span><span class="o">.</span><span class="na">min</span><span class="o">(</span><span class="n">result</span><span class="o">,</span><span class="n">right</span><span class="o">-</span><span class="n">left</span><span class="o">+</span><span class="mi">1</span><span class="o">);</span><span class="c1">//更新最小长度
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">sum</span><span class="o">-=</span><span class="n">nums</span><span class="o">[</span><span class="n">left</span><span class="o">++];</span><span class="c1">//左指针右移，开始新一轮窗口
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="o">}</span>
 </span></span><span class="line"><span class="cl">        <span class="o">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">slowindex</span><span class="o">;</span><span class="c1">//因为替换完最后一个非val元素后慢指针又+1，所以下标就是数量
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="o">==</span><span class="n">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">?</span><span class="mi">0</span><span class="o">:</span><span class="n">result</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="59-螺旋矩阵-ii">59. 螺旋矩阵 II</h2>
+<h3 id="题目描述-2">题目描述</h3>
+<p>给你一个正整数 <code>n</code> ，生成一个包含 <code>1</code> 到 <code>n^2</code> 所有元素，且元素按顺时针顺序螺旋排列的 <code>n x n</code> 正方形矩阵 <code>matrix</code> 。</p>
+<h3 id="做题思路-2">做题思路</h3>
+<p>本题的关键点是<strong>区间左右的开闭</strong>和<strong>n 奇偶的分别处理</strong>，将一圈分为上下左右 4 个左开右闭的区间。</p>
+<h3 id="参考代码-2">参考代码</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">//采取左闭右开区间
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span><span class="o">[][]</span> <span class="nf">generateMatrix</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">loop</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span><span class="c1">//循环数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span><span class="o">[][]</span> <span class="n">res</span><span class="o">=</span><span class="k">new</span> <span class="kt">int</span> <span class="o">[</span><span class="n">n</span><span class="o">][</span><span class="n">n</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">start</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span><span class="c1">//每次循环从(start,start)开始
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span> <span class="n">count</span><span class="o">=</span><span class="mi">1</span><span class="o">;</span><span class="c1">//填入的数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span> <span class="n">i</span><span class="o">,</span><span class="n">j</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span><span class="o">(</span><span class="n">loop</span><span class="o">++&lt;</span><span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="o">){</span><span class="c1">//注意没有等号，因为第1圈是第0次循环
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">for</span><span class="o">(</span><span class="n">j</span><span class="o">=</span><span class="n">start</span><span class="o">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">n</span><span class="o">-</span><span class="n">loop</span><span class="o">;</span><span class="n">j</span><span class="o">++){</span>
+</span></span><span class="line"><span class="cl">                <span class="n">res</span><span class="o">[</span><span class="n">start</span><span class="o">][</span><span class="n">j</span><span class="o">]=</span><span class="n">count</span><span class="o">++;</span><span class="c1">//上面从左到右
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span><span class="o">(</span><span class="n">i</span><span class="o">=</span><span class="n">start</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="o">-</span><span class="n">loop</span><span class="o">;</span><span class="n">i</span><span class="o">++){</span>
+</span></span><span class="line"><span class="cl">                <span class="n">res</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]=</span><span class="n">count</span><span class="o">++;</span><span class="c1">//右边从上到下
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span><span class="o">(;</span><span class="n">j</span><span class="o">&gt;=</span><span class="n">loop</span><span class="o">;</span><span class="n">j</span><span class="o">--){</span>
+</span></span><span class="line"><span class="cl">                <span class="n">res</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]=</span><span class="n">count</span><span class="o">++;</span><span class="c1">//下面从右到左
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span><span class="o">(;</span><span class="n">i</span><span class="o">&gt;=</span><span class="n">loop</span><span class="o">;</span><span class="n">i</span><span class="o">--){</span>
+</span></span><span class="line"><span class="cl">                <span class="n">res</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]=</span><span class="n">count</span><span class="o">++;</span><span class="c1">//左边从下到上
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">            <span class="n">start</span><span class="o">++;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="o">(</span><span class="n">n</span><span class="o">%</span><span class="mi">2</span><span class="o">==</span><span class="mi">1</span><span class="o">){</span><span class="c1">//如果n是奇数，中心要单独赋值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">res</span><span class="o">[</span><span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="o">][</span><span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="o">]=</span><span class="n">count</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">res</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
@@ -527,7 +621,7 @@
             
                 
 <article class="has-image">
-    <a href="/myblog/p/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B002977.%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9-209.%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84-59.%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5ii/">
+    <a href="/myblog/p/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B001704.%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE-27.%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/">
         
         
             <div class="article-image">
@@ -538,7 +632,7 @@
         
 
         <div class="article-details">
-            <h2 class="article-title">【Leetcode刷题笔记02】977.有序数组的平方 209.长度最小的子数组 59.螺旋矩阵II</h2>
+            <h2 class="article-title">【LeetCode刷题笔记01】704.二分查找 27.移除元素</h2>
         </div>
     </a>
 </article>
